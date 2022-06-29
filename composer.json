@@ -1,0 +1,13 @@
+{
+    "name": "macotsuu/hera",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hera\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.0"
+    }
+}
