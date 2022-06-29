@@ -4,7 +4,7 @@ Hera is an implementation of the CQRS pattern, based on a service bus that maps 
 - [PHP](https://www.php.net/) 8.0+
 
 ## Example of code
-```injectablephp
+```php
 <?php
   class Query implements \Hera\Query\QueryInterface {
     public function __construct(
@@ -34,5 +34,5 @@ who participated in this project.
 
 ## License
 
-This project is licensed under the [MIT](LICENSE) see the [LICENSE](LICENSE) file for
+This project is licensed under the [MIT](LICENSE.md) see the [LICENSE](LICENSE.md) file for
 details
