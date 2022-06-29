@@ -33,10 +33,10 @@ class Bus implements BusInterface
      * @return QueryHandlerInterface|CommandHandlerInterface
      * @throws Exception
      */
-    private function resolveHandler(string $query): QueryHandlerInterface|CommandHandlerInterface
+    public function resolveHandler(string $query): QueryHandlerInterface|CommandHandlerInterface
     {
         if (!isset($this->handlers[$query])) {
-            throw new Exception("Handler for query %s not found", $query);
+            throw new Exception(sprintf("Handler for query %s not found", $query));
         }
 
         return new $this->handlers[$query];
